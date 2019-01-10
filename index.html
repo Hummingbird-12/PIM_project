@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='http://www.hummingbird.tk/css/template.css' rel='stylesheet' type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            function animate() {
+                $('#splashimg').on({
+                    mouseenter: function() { $('#splashimg').prop('src', './img/ino.gif')},
+                    mouseleave: function() { $('#splashimg').prop('src', './img/ino_static.png')}
+                });
+            }
+            $(animate);
+        </script>
+        <style>
+            html, body {
+                margin: 0;
+                height: 100%;
+            }
+        </style>
+        <title>My Story</title>
+    </head>
+    <body>
+        <div id="head">
+            <nav>
+                <div id="home">
+                    <a href="http://www.hummingbird.tk"><img src="https://image.flaticon.com/icons/svg/263/263115.svg"></a>
+                </div>
+                <div class="container">
+                    <a class="border-animation" href="./about.html">
+                        <div class="border-animation__inner">About</div>
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="border-animation" href="./works.html">
+                        <div class="border-animation__inner">Works</div>
+                    </a>
+                </div>
+                <div class="container">
+                    <a class="border-animation" href="./contact.html">
+                        <div class="border-animation__inner">Contact</div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div id="splashwrap">
+            <img id="splashimg" src="./img/ino_static.png" alt="flying me">
+            <div id="splashtext">Just like a hummingbird,<br>fly with brave wings.</div>
+        </div>
+    </body>
+</html>
